@@ -1,0 +1,70 @@
+.recipe-card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #E8ECE8;
+    justify-content: space-between;
+     box-shadow: 0px 0px 0px grey;
+    -webkit-transition:  box-shadow .2s ease-out;
+     box-shadow: .8px .9px 3px grey;
+     cursor: pointer;
+    &:hover{
+     box-shadow: 1px 8px 20px grey;
+    -webkit-transition:  box-shadow .2s ease-in;
+    }
+}
+
+.recipe-image-container{
+    width: 100%;
+    .recipe-image{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.recipe-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5px;
+    .recipe-heading{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .recipe-title{
+            color: #2B763B;
+            font-weight: bold;
+        }
+        .recipe-category{
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    }
+    .recipe-description{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.recipe-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .recipe-label{
+        border: 1px solid #E8ECE8;
+        color: #2B763B;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        padding: 2px 5px;
+    }
+    .recipe-price{
+        font-weight: bold;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}
